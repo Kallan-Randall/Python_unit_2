@@ -1,0 +1,16 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<h1>Your Cupcake Order</h1>
+<ul>
+    {% for order in cupcakes %}
+    <li>
+        <h3>{{ order["name"] }}</h3>
+        <h4>Flavor: {{ order["flavor"] }}</h4>
+        <h4>Frosting: {{ order["frosting"] }}</h4>
+        <h4><b>Price: ${{ order["price"] }}</b></h4>
+    </li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('home') }}">Back to Main Page</a>

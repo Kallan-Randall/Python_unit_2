@@ -1,0 +1,13 @@
+size,name,price,flavor,frosting,sprinkles,filling
+regular,Classic Vanilla,2.99,Vanilla,Vanilla Buttercream,['white'],
+regular,Chocolate Delight, 2.99,Chocolate,Chocolate Buttercream,[],Chocolate Ganache
+regular,Strawberry Bliss,2.99,Strawberry,Cream Cheese,['pink'],Strawberry Jam
+regular,Lemon Zest,2.99,Lemon,Lemon Buttercream,['yellow'],Lemon Curd
+regular,Red Velvet Love,2.99,Red Velvet,Cream Cheese,[],
+mini,Mini Mocha,1.5,Mocha,Mocha Buttercream,['Chocolate'],
+mini,Mini Coconut Dream,1.50,Coconut,Coconut Buttercream,[],Coconut Cream
+mini,Mini Caramel Swirl,1.50,Caramel,Caramel Buttercream,['brown'],Caramel Filling
+mini,Mini Almond Joy,1.50,Almond,Chocolate Ganache,['white'],Coconut Filling
+mini,Mini Raspberry Surprise,1.50,Vanilla,Raspberry Buttercream,['red'],Raspberry Filling
+
+

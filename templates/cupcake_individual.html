@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<body>
+    <h1>View Individual Cupcake</h1>
+    <form action="{{ url_for('individual_cupcake') }}" method="POST">
+        <label for="cupcake_dropdown">Select a Cupcake:</label>
+        <select id="cupcake_dropdown" name="cupcake_name">
+            {% for cupcake in cupcakes %}
+            <option value="{{ cupcake['name'] }}">{{ cupcake['name'] }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">View Cupcake</button>
+    </form>
+    
+    {% if selected_cupcake %}
+    <h2>Selected Cupcake: {{ selected_cupcake['name'] }}</h2>
+    <h4>Flavor: {{ selected_cupcake['flavor'] }}</h4>
+    <h4>Frosting: {{ selected_cupcake['frosting'] }}</h4>
+    <h4>Price: ${{ selected_cupcake['price'] }}</h4>
+    {% endif %}
+    
+    <a href="{{ url_for('home') }}">Back to Main Page</a>
+</body>
+</html>
